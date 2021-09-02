@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	background-image:url(images/background.jpg) ;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.runway{
+	height:200px ;
+	width: 100% ;
+	background-image: url(images/road.jpg);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.car{
+	width: 500px;
+	position: absolute;
+	bottom: 60px;
+	right: -500px;
+	animation: plan 4s linear infinite;
+	
+}
+@keyframes plan{
+	100%{
+		transform: translate(-2000px);
+	}
+}
